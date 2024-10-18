@@ -16,7 +16,7 @@ const AboutObject: React.FC = () => {
   
     return (
       <mesh ref={torusRef} position={[0, 0, 0]}>
-        <torusKnotGeometry args={[1, 0.4, 300, 16]} />
+        <torusKnotGeometry args={[1.2, 0.4, 200, 16]} />
         <meshStandardMaterial color="blue" />
       </mesh>
     );

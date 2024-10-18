@@ -1,12 +1,19 @@
 import GradientHr from '../GradientHr';
 import shortly from "@/assets/projects/shortly.png";
 import jsFrameworks from "@/assets/projects/jsFrameworks.png";
-import calculator from "@/assets/projects/calculator.png";
-import lexicon from "@/assets/projects/lexicon.png";
-import vortex from "@/assets/projects/vortex.png";
+import linksDashboard from "@/assets/projects/linksDashboard.png";
+import urkelAnimate from "@/assets/projects/urkelAnimate.png";
 import { ArrowUpRight, Github } from 'lucide-react';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import cara from "@/assets/projects/Cara.png"
+import fancyCursor from "@/assets/projects/fancyCursor.gif"
+import jasperStore from "@/assets/projects/jasperStore.png"
+import tasty from "@/assets/projects/tasty.png"
+import student from "@/assets/projects/student.png"
+import believers from "@/assets/projects/believers.png"
+
+
 
 const projects = [
     {
@@ -28,30 +35,75 @@ const projects = [
         completed: true,
     },
     {
-        name: "CALCULATOR",
-        description: "I made a simple web based calculator for basic arithmetics.",
-        link: "https://mycalculator-steel.vercel.app/",
+        name: "CARA",
+        description: "Designed a responsive e-commerce frontend with HTML, CSS, and JavaScript, featuring product listings, a cart, and dynamic interactions for a seamless user experience.",
+        link: "#",
         github: "#",
-        image: calculator,
+        image: cara,
         stack: ["HTML", "CSS", "Javascript"],
         completed: true,
     },
     {
-        name: "URKEL LEXICON",
-        description: "This is a web based dictionary app. I took on this project to learn about APIs and how to handle responses from requests made to an API.",
-        link: "https://urkel-lexicon.vercel.app/",
-        github: "#",
-        image: lexicon,
-        stack: ["React", "Tailwind CSS", "Javascript", "JSX"],
+        name: "BELIEVERS HUB",
+        description: "This is a fullstack website developed with python, django and django template to post daily charges.",
+        link: "https://believers-hub.vercel.app/",
+        github: "https://github.com/Abmichael01/believers-hub",
+        image: believers,
+        stack: ["PYTHON", "DJANGO", "JAVASCRIPT", "HTML", "CSS"],
         completed: true,
     },
     {
-        name: "VORTEX.IO",
-        description: "This is a simple landing page for a crypto updates group.",
-        link: "https://vortex-io.vercel.app/",
+        name: "STUDENT MANAGEMENT SYSTEM",
+        description: "This is a fullstack project developed with python and django and django templates. It allows creation of categories and students' details can be added to any category",
+        link: "",
         github: "#",
-        image: vortex,
-        stack: ["React", "Django", "CSS", "Javascript"],
+        image: student,
+        stack: ["PYTHON", "DJANGO", "JAVASCRIPT", "HTML", "CSS"],
+        completed: true,
+    },
+    {
+        name: "DASHBOARD",
+        description: "Developed a clean and responsive frontend for a dashboard using HTML, CSS, and JavaScript. The design allows users to manage and display multiple links in a streamlined and intuitive interface.",
+        link: "#",
+        github: "https://github.com/Abmichael01/linksDashboard",
+        image: linksDashboard,
+        stack: ["HTML", "CSS", "Javascript"],
+        completed: true,
+    },
+    {
+        name: "JASPER STORE",
+        description: "Jasper Store is an ecommerce store landing page.",
+        link: "#",
+        github: "https://github.com/Abmichael01/jasperStore",
+        image: jasperStore,
+        stack: ["HTML", "CSS", "Javascript"],
+        completed: true,
+    },
+    {
+        name: "TASTY FOODS",
+        description: "Tasty Foods is a landing page designed for a restaurant.",
+        link: "",
+        github: "https://github.com/Abmichael01/tastyFoods",
+        image: tasty,
+        stack: ["HTML", "CSS", "Javascript"],
+        completed: true,
+    },
+    {
+        name: "URKEL ANIMATE",
+        description: "Urkel Animate is a portfolio website created to showcase animations, featuring interactive galleries, video previews, and project details in a clean and user-friendly layout.",
+        link: "https://urkelanimate.vercel.app/",
+        github: "#",
+        image: urkelAnimate,
+        stack: ["HTML", "CSS", "Javascript"],
+        completed: true,
+    },
+    {
+        name: "FANCY CURSOR",
+        description: "I made custom cursor to follow the system default cursor.",
+        link: "#",
+        github: "https://github.com/Abmichael01/fancy-cursor",
+        image: fancyCursor,
+        stack: ["HTML", "CSS", "Javascript"],
         completed: true,
     },
 ];
