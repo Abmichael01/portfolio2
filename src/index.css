@@ -70,13 +70,14 @@
 
 @layer utilities {
   .card-wrapper {
-    @apply bg-gradient-to-b from-slate-700 to-slate-800;
+    @apply bg-gradient-to-b from-primary/20 to-primary/30;
   }
 
   .card-wrapper::before {
-    background: conic-gradient(rgba(244, 114, 182, 0.4) 0deg,
-        rgba(192, 132, 252, 0.4) 0deg,
-        transparent 80deg);
+    background: conic-gradient(
+      rgba(114, 127, 244, 0.4) 0deg,
+        rgba(140, 132, 252, 0.4) 0deg,
+        transparent 120deg);
     @apply w-[150%] h-[150%] content-[""] absolute animate-border-spin left-[-25%] top-[-25%]
   }
 

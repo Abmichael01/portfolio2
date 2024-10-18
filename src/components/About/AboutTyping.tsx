@@ -1,3 +1,4 @@
+import { useInView } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import Typewriter from "react-typewriter-effect";
 
@@ -6,28 +7,8 @@ const aboutMeText = "Hello, I'm Michael! I’m a passionate full-stack developer
     "Let's connect and create something amazing together!";
 
 const AboutTyping: React.FC = () => {
-  const [isInView, setIsInView] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null); 
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        setIsInView(entry.isIntersecting);
-      },
-      { threshold: 0.5 } 
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current); 
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current); 
-      }
-    };
-  }, []);
+  const isInView = useInView(sectionRef, {once: true})
 
   return (
     <div ref={sectionRef} className="about-section">

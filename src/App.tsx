@@ -5,6 +5,7 @@ import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
+import { Toaster } from "@/components/ui/toaster"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Services />
       <Projects />
       <Contact />
+      <Toaster />
     </div>
 
   )
