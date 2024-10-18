@@ -3,6 +3,11 @@ import { Button } from '@/components/ui/button';
 // const navs = ["Home", "About", "Projects"]
 
 const Navbar = () => {
+  const contactSection = document.querySelector(".contact-section") as HTMLDivElement
+  
+  const scrollToContact = () => {
+    contactSection.scrollIntoView({ behavior: "smooth" })
+  }
   return (
     <div className='flex justify-between items-center py-2 '>
       <div className='flex items-end'>
@@ -17,7 +22,11 @@ const Navbar = () => {
               </a>
             ))
           } */}
-          <Button>Contact Me</Button>
+          <Button
+          onClick={scrollToContact}
+          >
+              Contact Me
+            </Button>
         </nav>
       </div>
     </div>
