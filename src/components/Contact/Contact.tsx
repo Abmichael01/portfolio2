@@ -148,6 +148,7 @@ const Contact = () => {
         setValue("name", "");
         setValue("email", "");
         setValue("message", "");
+        console.log(response)
       })
       .catch((error) => {
         toast({
@@ -156,6 +157,7 @@ const Contact = () => {
           variant: "destructive",
         });
         setLoading(false);
+        console.log(error)
       });
   };
 
