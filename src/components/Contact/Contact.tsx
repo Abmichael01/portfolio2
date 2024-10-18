@@ -130,9 +130,9 @@ const Contact = () => {
     resolver: zodResolver(contactSchema),
   });
 
-  // Ref to trigger animations when in view
+
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" }); // Adjust margin for when to trigger
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const onSubmit = (data: ContactFormInputs) => {
     setLoading(true);
@@ -224,8 +224,8 @@ const Contact = () => {
                 </div>
               </motion.div>
 
-              <motion.div variants={fadeInVariants}>
-                <Button type="submit" disabled={loading}>
+              <motion.div variants={fadeInVariants} className="w-full">
+                <Button type="submit" disabled={loading} className="w-full">
                   {loading ? "Sending Message..." : "Send Message"}
                 </Button>
               </motion.div>

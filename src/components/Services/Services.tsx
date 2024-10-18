@@ -57,7 +57,7 @@ const Services = () => {
             return (
               <motion.div
                 key={index}
-                ref={cardRef} 
+                ref={cardRef}
                 className='relative w-[150px] sm:w-[200px] lg:w-[250px] h-[250px] md:h-[210px] rounded-xl card-wrapper overflow-hidden flex items-center justify-center'
                 initial={{ opacity: 0, y: 100, filter: "blur(20px)" }}
                 animate={isInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {  }} 

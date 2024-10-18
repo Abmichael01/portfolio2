@@ -68,7 +68,7 @@ const Skills = () => {
                 className="text-center flex flex-col gap-2 items-center cursor-pointer"
                 initial={{ opacity: 0, scale: 0, filter: "blur(20px)" }}
                 animate={isInView ? { opacity: 1, scale: 1, filter: "blur(0px)" } : {}}
-                transition={{ duration: 0.3, delay: isInView ? index * 0.2 : 0 }} // Duration for the animation
+                transition={{ duration: 0.3 }} // Duration for the animation
               >
                 <i className={`${skill.class} text-5xl lg:text-7xl text-primary`}></i>
                 <motion.p className="mt-2 text-slate-700 font-semibold text-sm">
