@@ -6,6 +6,7 @@ import Skills from './components/Skills/Skills';
 import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
 import { Toaster } from "@/components/ui/toaster"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Projects />
       <Contact />
       <Toaster />
+      <Analytics />
     </div>
 
   )

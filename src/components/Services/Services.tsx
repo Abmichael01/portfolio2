@@ -48,7 +48,7 @@ const Services = () => {
     <div>
       <div className='flex flex-col gap-10'>
         <SectionName name='Services' />
-        <div className='flex flex-wrap gap-3 sm:gap-5 md:gap-10 justify-center'>
+        <motion.div transition={{ staggerChildren: 0.3 }} className='flex flex-wrap gap-3 sm:gap-5 md:gap-10 justify-center'>
           {services.map((service, index) => {
             // Create a ref for each card
             const cardRef = useRef(null);
@@ -76,7 +76,7 @@ const Services = () => {
               </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
       <GradientHr />
     </div>

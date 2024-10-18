@@ -166,7 +166,7 @@ const Contact = () => {
       ref={ref}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
-      transition={{ staggerChildren: 0.3 }}
+      transition={{ staggerChildren: 1 }}
     >
       <div className="flex flex-col gap-10">
         {/* Animate the section name */}

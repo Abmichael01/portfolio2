@@ -69,6 +69,7 @@ import AbilitiesTyping from "./AbilitiesTyping";
 import { Button } from "@/components/ui/button";
 import { Download, Github } from "lucide-react";
 import GradientHr from "@/components/GradientHr";
+import cv from "@/assets/Oyekola Michael CV .pdf"
 
 const stats = [
     {
@@ -156,9 +157,11 @@ const Hero = () => {
                         className="flex gap-4 items-center justify-center md:justify-start"
                         variants={itemVariants}
                     >
-                        <Button className="rounded-[20px] text-primary border bg-primary/20 border-primary flex items-center gap-2 hover:bg-transparent hover:translate-x-6 transition-all duration-500 peer">
-                            Download CV <Download className="text-[4px]" />
-                        </Button>
+                        <a href={cv} download="Oyekola Michael CV">
+                            <Button className="rounded-[20px] text-primary border bg-primary/20 border-primary flex items-center gap-2 hover:bg-transparent hover:translate-x-6 transition-all duration-500 peer">
+                                Download CV <Download className="text-[4px]" />
+                            </Button>
+                        </a>
                         <a
                             href="https://github.com/Abmichael01"
                             className="w-[40px] h-[40px] border bg-primary/20 border-primary rounded-full flex items-center justify-center text-primary hover:translate-x-2 transition-all duration-500 peer-hover:translate-x-6"
