@@ -174,7 +174,7 @@ const Hero = () => {
                     whileHover={{ scale: 1.1, rotate: 8 }}
                     transition={{ duration: 1 }}
                 >
-                    <div className="w-[90%] overflow-hidden h-[300px] z-10 relative sm:w-[300px] bg-customBg sm:h-[300px]  lg:w-[400px] lg:h-[400px] rounded-full shadow-inner">
+                    <div className="w-[250px] overflow-hidden h-[250px] z-10 relative sm:w-[300px] bg-customBg sm:h-[300px]  lg:w-[400px] lg:h-[400px] rounded-full shadow-inner">
                         <img src={myPhoto} alt="Profile" className="w-full h-full object-cover grayscale" />
                     </div>
                 </motion.div>
