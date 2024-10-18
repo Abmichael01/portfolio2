@@ -1,5 +1,5 @@
 import { useInView } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import Typewriter from "react-typewriter-effect";
 
 const aboutMeText = "Hello, I'm Michael! I’m a passionate full-stack developer with three years of experience in creating dynamic web applications. I have worked on various projects that have sharpened my skills in both front-end and back-end development. " +
