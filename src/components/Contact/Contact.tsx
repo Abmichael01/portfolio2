@@ -23,7 +23,7 @@ type ContactFormInputs = {
 
 
 const Contact = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const { register, handleSubmit, formState: { errors } } = useForm<ContactFormInputs>({
         resolver: zodResolver(contactSchema),
     });
 
