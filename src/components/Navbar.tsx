@@ -23,7 +23,9 @@ const Navbar = () => {
             ))
           } */}
           <Button
-          onClick={scrollToContact}
+          onClick={()=>{
+            scrollToContact()
+          }}
           >
               Contact Me
             </Button>
