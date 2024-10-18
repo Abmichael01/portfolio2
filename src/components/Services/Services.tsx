@@ -61,7 +61,7 @@ const Services = () => {
                 className='relative w-[150px] sm:w-[200px] lg:w-[250px] h-[250px] md:h-[210px] rounded-xl card-wrapper overflow-hidden flex items-center justify-center'
                 initial={{ opacity: 0, y: 100, filter: "blur(20px)" }}
                 animate={isInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {  }} 
-                transition={{ duration: 0.5, delay: isInView ? index * 0.2 : 0 }}
+                transition={{ duration: 0.5 }}
               >
                 <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] bg-customBg relative z-10 flex items-center flex-col justify-center rounded-xl'>
                   <div className='bg-primary/60 bg-opacity-10 p-6 w-fit rounded-full mb-3 shadow-md'>

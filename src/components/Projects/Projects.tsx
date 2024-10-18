@@ -71,7 +71,7 @@ const Projects = () => {
                             key={index}
                             initial={{ opacity: 0, y: 100, filter: "blur(20px)" }}
                             animate={isInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
-                            transition={{ duration: 0.5 }} // Adjust the duration for the fade-in effect
+                            transition={{ duration: 0.5 }}
                             className='p-[1.5px] rounded-xl bg-gradient-to-b from-gray-800 via-blue-500 to-gray-800 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl'
                         >
                             <div className="flex flex-col overflow-hidden bg-customBg rounded-xl h-full">
