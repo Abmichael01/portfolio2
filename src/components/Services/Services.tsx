@@ -1,4 +1,3 @@
-import React from 'react'
 import GradientHr from '../GradientHr'
 import { Database, Server, Cloud, Code, Shield, GitMerge, Computer } from 'lucide-react'; // Add other icons as needed
 import SectionName from '../SectionName';

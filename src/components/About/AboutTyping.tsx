@@ -40,11 +40,11 @@ const AboutTyping: React.FC = () => {
           }}
           startDelay={100}
           cursorColor="#00bfff"
-          text={aboutMeText}
+          text={aboutMeText as string}
           typeSpeed={20}
           eraseSpeed={100}
           hideCursorAfterText={true} 
-          displayTextRenderer={(text, i) => {
+          displayTextRenderer={(text: string, i: number) => {
             return (
               <span key={i} style={{ fontWeight: 'normal' }}>
                 {text}

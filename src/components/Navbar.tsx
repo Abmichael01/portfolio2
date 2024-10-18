@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 
-const navs = ["Home", "About", "Projects"]
+// const navs = ["Home", "About", "Projects"]
 
 const Navbar = () => {
   return (
